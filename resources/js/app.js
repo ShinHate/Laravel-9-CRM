@@ -1,8 +1,11 @@
-import { createApp } from 'vue'
-import HelloWorld from './components/HelloWorld.vue';
+import {createApp} from "vue"
+import App from './components/App.vue'
+import route from "./route";
 
-const app = createApp({});
-app.component('hello-world', HelloWorld)
-    .mount('#app');
+createApp(App)
+    .use(route)
+    .mount("#app")
+
+require('./bootstrap')
 
 
